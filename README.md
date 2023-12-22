@@ -43,8 +43,8 @@ Derechos de autor (c) 2022 Gary Alexander Campusano Paredes
 ## Contacto
 
 - **Desarrollador 🧑‍💻:** Gary Alexander Campusano Paredes
-- **[LinkedIn:](https://www.linkedin.com/in/gary-alexander-campusano-paredes-87a28724a/)**
+- **LinkedIn: [Gary Alexander Campusano Paredes](https://www.linkedin.com/in/gary-alexander-campusano-paredes-87a28724a/)**
 - **Correo Electrónico 📧:** ingcampusano@outlook.com
-- **[Link del curso 🔗:] (https://www.youtube.com/watch?v=jRwW7WCCkIo&ab_channel=InformaticaLive)**
+- **Link del curso 🔗: [Link del curso 🔗] (https://www.youtube.com/watch?v=jRwW7WCCkIo&ab_channel=InformaticaLive/)**
 
 ¡Gracias por revisar mi progreso en el lenguaje de programación C#! Si tienes alguna pregunta o sugerencia, no dudes en contactarme! 🚀
