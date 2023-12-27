@@ -1,31 +1,39 @@
-"""
-Lectura ('r'): Abre un archivo existente para lectura. Si el archivo no existe, se
-producirä un error.
-Escritura ('w'): Abre un archivo para escritura. Si el archivo no existe, se crearä. Si
-el archivo existe, se truncarä (se eliminarä su contenido).
-Adjuntar ('C'): Abre un archivo para agregar contenido a1 final. Si el archivo no existe,
-se crearä.
-Lectura y escritura ('r+'): Abre un archivo para lectura y escritura.
-Binario ('b'): Abre un archivo en modo binario.
-"""
+# Lectura ('r')
+with open('archivo.txt', 'r') as file:
+    contenido = file.read()
+print("Contenido después de lectura:", contenido)
 
+# Escritura ('w')
+with open('archivo.txt', 'w') as file:
+    file.writelines("Nuevo contenido\n")
 
-#Abre archivo (SOLO LECTURA)
-archivo = open("archivo.txt", "r")
-#Al colocarle 'r' el archivo se abrira en solo lectura.
-#Lee archivo
-contenido = archivo.read()
-#Imprime archivo
-print(contenido)
-#Cierra archivo
-archivo.close()
+# Lectura después de escritura ('w')
+with open('archivo.txt', 'r') as file:
+    contenido = file.read()
+print("Contenido después de escritura:", contenido)
 
-##Abre archivo (SOLO ESCRITURA)
-archivo = open("archivo.txt", "w")
-#Sobre escribe el archivo
-archivo.writelines("Este es otra linea que estoy agregando al documento.")
-#Imprime archivo
-print(contenido)
-archivo.close()
+# Adjuntar ('a')
+with open('archivo.txt', 'a') as file:
+    file.writelines("Contenido adicional\n")
+
+# Lectura después de adjuntar ('a')
+with open('archivo.txt', 'r') as file:
+    contenido = file.read()
+print("Contenido después de adjuntar ('a'):", contenido)
+
+# Lectura y escritura ('r+')
+with open('archivo.txt', 'r+') as file:
+    contenido = file.read()
+    file.writelines("Nuevo contenido\n")
+    # Vuelve al principio para leer el contenido completo
+    #file.seek(0)
+    contenido = file.read()
+print("Contenido después de lectura y escritura ('r+'):", contenido)
+
+#Leer linea por linea
+with open('archivo.txt', 'r') as file:
+    for linea in file:
+        print(linea)
+
 
 
